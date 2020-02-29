@@ -33,7 +33,7 @@ Requires: polkit
 A simple GUI frontend to make gddrescue easier to use.
 
 %prep
-%setup -qn ddrescue-gui
+%setup -qn ddrescue-gui-%{version}
 
 %build
 %py_build
