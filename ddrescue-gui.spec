@@ -36,6 +36,8 @@ A simple GUI frontend to make gddrescue easier to use.
 %prep
 %setup -qn ddrescue-gui-%{version}
 
+rm LICENSE tests.py
+
 %build
 %py_build
 
