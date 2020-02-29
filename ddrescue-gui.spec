@@ -10,19 +10,21 @@ URL:            https://www.hamishmb.com/html/downloads.php?program_name=ddrescu
 Source0:        https://www.hamishmb.com/files/Downloads/ddrescue-gui/%{version}/OtherDistro/%{name}_%{version}~otherdistro-0ubuntu1~ppa1.tar.gz
 BuildArch:      noarch
 
-Requires: python3
-python3-wxpython4, 
-python3-getdevinfo, 
-python3-requests, 
-ddrescue, 
-psmisc, 
-coreutils, 
-kpartx, 
-parted, 
-util-linux,
-libnotify, 
-bash, 
-polkit
+Requires: python
+#Requires:  python-wxpython4, 
+Requires: wxPython
+#Not ready
+#Requires: python-getdevinfo 
+Requires: python3dist(requests)
+Requires: ddrescue
+Requires: psmisc
+Requires: coreutils
+Requires: kpartx 
+Requires: parted 
+Requires: util-linux
+Requires: libnotify
+Requires: bash
+Requires: polkit
 
 %description
 A simple GUI frontend to make gddrescue easier to use.
@@ -43,7 +45,7 @@ cp -rv org.hamishmb.ddrescue-gui.policy %{buildroot}%{_datadir}/polkit-1/actions
 chmod -R a+rx %{buildroot}%{_datadir}/ddrescue-gui/
 
 %files
-/usr/share/ddrescue-gui/*
-/usr/share/applications/ddrescue-gui.desktop
-/usr/share/pixmaps/ddrescue-gui.png
-/usr/share/polkit-1/actions/org.hamishmb.ddrescue-gui.policy
+%{_datadir}/ddrescue-gui/*
+%{_datadir}/applications/ddrescue-gui.desktop
+%{_datadir}/pixmaps/ddrescue-gui.png
+%{_datadir}/polkit-1/actions/org.hamishmb.ddrescue-gui.policy
