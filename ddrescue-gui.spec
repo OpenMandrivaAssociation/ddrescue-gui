@@ -41,7 +41,6 @@ A simple GUI frontend to make gddrescue easier to use.
 %install
 %py_install
 
-#%install
 #rm -rf $RPM_BUILD_ROOT
 #mkdir -p %{buildroot}%{_datadir}/ddrescue-gui/
 #mkdir -p %{buildroot}%{_datadir}/applications
