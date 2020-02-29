@@ -7,7 +7,7 @@ Summary:        A simple GUI frontend to make gddrescue easier to use.
 Group:          Applications/System
 License:        GPLv3+
 URL:            https://www.hamishmb.com/html/downloads.php?program_name=ddrescue-gui
-Source0:        https://www.hamishmb.com/files/Downloads/ddrescue-gui/%{version}/OtherDistro/%{name}_%{version}~otherdistro-0ubuntu1~ppa1.tar.gz
+Source0:        https://www.hamishmb.com/files/Downloads/ddrescue-gui/%{version}/OtherDistro/ddrescue-gui_%{version}_otherdistro-0ubuntu1_ppa1.tar.gz
 BuildArch:      noarch
 
 Requires: python
