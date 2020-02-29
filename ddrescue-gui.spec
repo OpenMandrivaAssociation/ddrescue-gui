@@ -1,3 +1,5 @@
+#NOT READY YET!
+
 Name:           ddrescue-gui
 Version:        2.0.2
 Release:        1
