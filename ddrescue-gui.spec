@@ -18,7 +18,7 @@ Requires: python
 #Requires:  python-wxpython4, 
 Requires: wxPython
 #Not ready
-#Requires: python-getdevinfo 
+Requires: python3dist(getdevinfo)
 Requires: python3dist(requests)
 Requires: ddrescue
 Requires: psmisc
