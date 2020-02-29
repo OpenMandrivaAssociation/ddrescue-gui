@@ -6,7 +6,6 @@ Group:          Applications/System
 License:        GPLv3+
 URL:            https://www.hamishmb.com/html/downloads.php?program_name=ddrescue-gui
 Source0:        https://www.hamishmb.com/files/Downloads/ddrescue-gui/%{version}/OtherDistro/ddrescue-gui_%{version}_otherdistro-0ubuntu1_ppa1.tar.gz
-Patch0:		ddrescue-gui-2.0.2-install.patch
 BuildArch:      noarch
 
 BuildRequires:  python
