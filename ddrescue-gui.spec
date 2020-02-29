@@ -1,14 +1,26 @@
 Name:           ddrescue-gui
 Version:        2.0.2
-Release:        1%{?dist}
+Release:        1
 Summary:        A simple GUI frontend to make gddrescue easier to use.
 Group:          Applications/System
 License:        GPLv3+
 URL:            https://www.hamishmb.com/html/downloads.php?program_name=ddrescue-gui
-Source0:        %{name}-%{version}.tar.gz
+Source0:        https://www.hamishmb.com/files/Downloads/ddrescue-gui/%{version}/OtherDistro/%{name}_%{version}~otherdistro-0ubuntu1~ppa1.tar.gz
 BuildArch:      noarch
 
-Requires:       python3, python3-wxpython4, python3-getdevinfo, python3-requests, ddrescue, psmisc, coreutils, kpartx, parted, util-linux, libnotify, bash, polkit
+Requires: python3
+python3-wxpython4, 
+python3-getdevinfo, 
+python3-requests, 
+ddrescue, 
+psmisc, 
+coreutils, 
+kpartx, 
+parted, 
+util-linux,
+libnotify, 
+bash, 
+polkit
 
 %description
 A simple GUI frontend to make gddrescue easier to use.
