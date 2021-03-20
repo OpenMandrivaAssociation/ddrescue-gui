@@ -1,5 +1,5 @@
 Name:           ddrescue-gui
-Version:        2.0.2
+Version:        2.1.1
 Release:        1
 Summary:        A simple GUI frontend to make gddrescue easier to use.
 Group:          Applications/System
@@ -13,9 +13,10 @@ BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(pip)
 BuildRequires:  python3dist(wheel)
+BuildRequires:	python3dist(wxpython)
 
 Requires: python
-#Requires:  python-wxpython4, 
+Requires: python3dist(wxpython)
 Requires: wxPython
 #Not ready
 Requires: python3dist(getdevinfo)
